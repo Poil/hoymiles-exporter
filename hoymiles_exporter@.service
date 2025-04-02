@@ -1,0 +1,14 @@
+[Unit]
+Description=Hoymiles Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=hoymiles
+Group=hoymiles
+Type=simple
+
+ExecStart=/home/hoymiles/hoymilesProm.py --dtu-ip %I
+
+[Install]
+WantedBy=multi-user.target
