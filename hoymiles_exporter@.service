@@ -8,7 +8,8 @@ User=hoymiles
 Group=hoymiles
 Type=simple
 
-ExecStart=/home/hoymiles/hoymilesProm.py --dtu-ip %I
+EnvironmentFile=/etc/default/hoymiles-%I
+ExecStart=/home/hoymiles/hoymilesProm.py --dtu-ip ${DTU_IP} --enc-rand ${DTU_ENC_RAND}
 
 [Install]
 WantedBy=multi-user.target

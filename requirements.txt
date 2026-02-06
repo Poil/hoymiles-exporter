@@ -1,2 +1,3 @@
-hoymiles_wifi==0.4.0
-prometheus_client==0.21.1
+hoymiles-wifi==0.5.5
+prometheus_client==0.22.1
+protobuf==6.33.5
