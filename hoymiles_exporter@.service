@@ -9,7 +9,7 @@ Group=hoymiles
 Type=simple
 
 EnvironmentFile=/etc/default/hoymiles-%I
-ExecStart=/home/hoymiles/hoymilesProm.py --dtu-ip ${DTU_IP} --enc-rand ${DTU_ENC_RAND}
+ExecStart=/home/hoymiles/hoymilesProm.py --dtu-ip ${DTU_IP}
 
 [Install]
 WantedBy=multi-user.target
